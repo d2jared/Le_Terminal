@@ -4,12 +4,11 @@
 <?php include "includes/head.php"; ?>
 <body>
 
-<?php  if(isset($errorMsg)){ echo '<p>' .$errorMsg. '<p>'; } ?>
-
 <!--formulaire-->
 <br />
 <br />
 <form class="container" method="POST">
+<?php  if(isset($errorMsg)){ echo '<p>' .$errorMsg. '<p>'; } ?>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Pseudo</label>
     <input type="text" class="form-control" name="pseudo">
@@ -28,6 +27,8 @@
   </div>
   <button type="submit" class="btn btn-primary" name="validate">S'inscrire</button>
 </form>
+<br /><br />
+<a href="login.php"><p>Déjà inscrit ?</p></a>
     
 </body>
 </html>
